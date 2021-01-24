@@ -1,0 +1,120 @@
+"""
+GIT Commands - Working as a Solo Developer
+"""
+# Why git and what git can do
+
+Step 1
+# Goto https://git-scm.com/ and download the  NON PORTABLE version 
+# Install git locally on your system/laptop
+# git installation tutorial on Windows
+
+# git installation tutorial on Linux
+# sudo yum install git or:
+# sudo apt-get install git
+
+# git installation tutorial on Mac
+
+
+Step 2
+# Create an account on www.github.com ( Sign Up )
+# Note down and keep 3 things ( username, email and password )
+
+
+Step 3
+# On terminal or Git Bash run the command to confirm the installation 
+# git --version
+
+Step 4
+# Configuring the git on your system  
+# git config user.email
+# git config user.name
+
+# git config --global user.email "sylvester@neuerung.co.in"
+# git config --global user.name "Dr. Sylvester Fernandes"
+
+S C M  = Source Code Management
+
+Working Directory          = FPS1
+Staging Area               = .git
+Repo ( Local Repository )  = .git
+
+Repo ( Remote Repository ) = github.com
+
+Git is a tool to manage code in local repository
+Github is a cloud Storage to store my code in remote repository
+
+This URL is representing my Remote Repo
+https://github.com/neuerung/FPS1.git
+
+
+Step 5
+# Goto Github
+# Create a new empty remote repo on Github
+# Repository Name = FPS1 and Description (optional) = Forsk Prime Season 1 
+# which should be Public and DO NOT initialize it with a README 
+# Click on Create repository
+# copy the HTTPS URL of repo ( https://github.com/neuerung/FPS1.git  )
+# Goto terminal or Command Prompt and change directory to the desktop 
+# Run the below command to clone as a local repo
+# git clone https://github.com/neuerung/FPS1.git
+
+
+Step 6
+# Example to understand the concept 
+# Change directory to FPS1
+# create a test.py file on desktop/FPS1
+# Windows user use copy con test.py and then ENTER then CTRL+Z and then ENTER
+# Mac/Linux users use touch test.py
+# git status  # Untracked file 
+# git add test.py 
+# git status  # New file 
+# git commit -m "Adding new Empty file"
+# git status # nothing to commit
+# git push          ( git push –u origin master )
+# Goto github.com and refresh your page to see the test.py
+
+Create your new file.py
+git add file2.py
+git commit -m ""
+git push
+
+Linux / Mac / Git Bash on Windows
+touch file.py
+
+Windows / Command Prompt
+copy con file.py ENTER CTRL+z ENTER
+
+
+
+
+WorkFlows ( optional )
+Step 7
+# Onetime Workflow for old files
+# Add all the files in the new folder FPS1
+# git add --all
+# git commit -m "Adding all files"
+# git status
+# git push
+# Goto github.com and refresh your page to see all the files
+
+
+Step 8
+# Everyday Workflow for new files
+# Create files in the new folder FPS1
+# git add .
+# git commit -m "Added new file"
+# or git commit -a -m "Added new file"
+# git status # nothing to commit
+# git push
+# Goto github.com and refresh your page to see all the new file added
+
+
+Step 9
+# Goto Github, edit and commit changes 
+# Edit locally and git add test.py and git commit -m "Did some more changes"
+# git pull
+# Merge Conflicts needs to be solved
+# Open Locally and edit, remove all <<<<<, ====== and >>>>>> and solve the error
+# git add <filename>
+# git commit -m "Fix Merge Conflict"
+# git push
