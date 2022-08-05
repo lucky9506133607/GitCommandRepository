@@ -118,3 +118,10 @@ Step 9
 # git add <filename>
 # git commit -m "Fix Merge Conflict"
 # git push
+
+Step 10
+Compare commits
+=========================
+1. Check all the commits in detail (git log --reflog) or (git reflog)
+2. add (/compare) on your repository URL.
+3. enter both commit id.
